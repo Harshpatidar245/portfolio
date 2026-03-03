@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,8 +7,20 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import ThreeScene from './components/ThreeScene';
+import ProjectDetail from './components/ProjectDetail';
+import type { Project } from './data/projects';
 
 export default function App() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleSelectProject = useCallback((project: Project) => {
+    setSelectedProject(project);
+  }, []);
+
+  const handleCloseProject = useCallback(() => {
+    setSelectedProject(null);
+  }, []);
+
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth';
     return () => {
@@ -29,10 +41,13 @@ export default function App() {
         <Hero />
         <About />
         <Experience />
-        <Projects />
+        <Projects onSelectProject={handleSelectProject} />
         <Skills />
         <Contact />
       </main>
+
+      {/* Project Detail Overlay */}
+      <ProjectDetail project={selectedProject} onClose={handleCloseProject} />
 
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-sm border-t border-slate-200 py-8 md:py-12 px-4 md:px-6">

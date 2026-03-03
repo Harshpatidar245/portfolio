@@ -35,12 +35,12 @@ export default function Navbar() {
           href="#hero"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-xl md:text-2xl font-bold text-slate-800 flex items-center gap-2 group"
+          className="text-xl md:text-2xl font-bold text-slate-800 flex items-center gap-2.5 group"
         >
-          <div className="w-9 h-9 md:w-10 md:h-10 bg-indigo-500 rounded-lg flex items-center justify-center text-white group-hover:rotate-12 transition-transform duration-300 text-sm">
-            HP
+          <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-full flex items-center justify-center text-white font-bold group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-indigo-500/30 transition-all duration-300 text-xs md:text-sm tracking-tight">
+            H
           </div>
-          <span className="hidden sm:inline">Harsh Patidar</span>
+          <span className="hidden sm:inline bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">Harsh Patidar</span>
         </motion.a>
 
         {/* Desktop Nav */}

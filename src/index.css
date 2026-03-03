@@ -29,3 +29,18 @@
     @apply bg-slate-300 rounded-full border-2 border-slate-100 hover:bg-indigo-400 transition-colors;
   }
 }
+
+/* ── 3D card fan utilities ─────────────────────────── */
+@layer utilities {
+  .perspective-1800 {
+    perspective: 1800px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}

@@ -38,7 +38,7 @@ export default function Skills() {
 
   return (
     <Section id="skills">
-      <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-10 md:mb-16 flex items-center gap-3 md:gap-4">
           <span className="w-10 md:w-12 h-1 bg-indigo-500 rounded-full" />
           Technical Skills
@@ -50,7 +50,7 @@ export default function Skills() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="p-4 md:p-6 bg-white/95 md:bg-white/70 backdrop-blur-md border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-md transition-all duration-300 group"
+              className="p-4 md:p-6 bg-white/95 md:bg-white/90 backdrop-blur-xl border border-slate-200 rounded-2xl hover:border-indigo-300 hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex items-center gap-3 md:gap-4 mb-5 md:mb-6">
                 <div className="p-2.5 md:p-3 bg-indigo-50 rounded-xl group-hover:bg-indigo-100 transition-colors">

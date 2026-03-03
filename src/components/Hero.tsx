@@ -9,13 +9,13 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="max-w-4xl bg-white/90 md:bg-transparent backdrop-blur-md md:backdrop-blur-none rounded-3xl p-6 md:p-0"
+        className="w-full max-w-5xl bg-white/95 md:bg-white/80 backdrop-blur-xl md:backdrop-blur-lg rounded-3xl p-6 md:p-12 md:shadow-xl md:shadow-slate-200/40 md:border md:border-slate-200/60"
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-indigo-500 font-mono text-sm md:text-lg mb-4 tracking-widest uppercase"
+          className="text-indigo-600 font-mono text-sm md:text-lg mb-4 tracking-widest uppercase font-semibold"
         >
           Full Stack Developer
         </motion.h2>
@@ -23,7 +23,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-4xl sm:text-6xl md:text-8xl font-bold text-slate-800 mb-4 md:mb-6 tracking-tight"
+          className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-slate-900 mb-4 md:mb-6 tracking-tight"
         >
           Harsh Patidar
         </motion.h1>
@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-slate-500 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-2"
+          className="text-slate-700 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-2"
         >
           Crafting high-performance web applications with a focus on interactive user experiences and robust backend architecture.
         </motion.p>
